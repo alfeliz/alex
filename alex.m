@@ -371,8 +371,8 @@ vdown = move(:,8);
 
 kinenergiaup(:,1) = move(:,4).*1e-3; %Time in microseconds
 kinenergiadown(:,1) = kinenergiaup(:,1);
-interenergiaup(:,1) = kinenergiaup(:,1);
-internergiadown(:,1) = kinenergiaup(:,1); 
+intenergiaup(:,1) = kinenergiaup(:,1);
+intenergiadown(:,1) = kinenergiaup(:,1); 
 
 #Polynomia from velocities upper side of the expansion:
 [vup_pol, rcorup, polestr] = polyadj(rup.*r0,vup,0.99); %Adjusting to polynomium the velocity data with the correct dimensions.
